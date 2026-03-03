@@ -1,0 +1,28 @@
+{
+  "name": "postgis-ol",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc --noEmit && prettier --check .",
+    "prepare": "husky",
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "husky": "^9.1.7",
+    "prettier": "^3.8.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1"
+  },
+  "dependencies": {
+    "ol": "^10.8.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "type": "module"
+}

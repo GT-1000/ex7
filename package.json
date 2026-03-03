@@ -1,0 +1,37 @@
+{
+  "name": "ex7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "layer:grunnskoler:download": "download --extract --out tmp https://nedlasting.geonorge.no/geonorge/Befolkning/Grunnskoler/PostGIS/Befolkning_0000_Norge_25833_Grunnskoler_PostGIS.zip",
+    "layer:fylker2023:download": "download --extract --out tmp https://nedlasting.geonorge.no/geonorge/Basisdata/Fylker/PostGIS/Basisdata_0000_Norge_25833_Fylker_PostGIS.zip",
+    "build": "vite build",
+    "postinstall": "cd server && npm install",
+    "start": "cd server && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/pg": "^8.16.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.4",
+    "download-cli": "^1.1.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.19.9",
+    "hono": "^4.12.3",
+    "ol": "^10.8.0",
+    "pg": "^8.19.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "type": "module"
+}
