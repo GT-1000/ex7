@@ -15,7 +15,8 @@
   "dependencies": {
     "@hono/node-server": "^1.19.9",
     "hono": "^4.12.3",
-    "pg": "^8.19.0"
+    "pg": "^8.19.0",
+    "pg-copy-streams": "^7.0.0"
   },
   "devDependencies": {
     "@types/pg": "^8.16.0",
