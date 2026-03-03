@@ -39,9 +39,15 @@ app.get("/api/grunnskoler", async (c) => {
   });
 });
 
-// React build
+// Serve React build (dist)
 app.get("*", serveStatic({ root: "../dist" }));
 
+// Render uses PORT env var
 const port = Number(process.env.PORT) || 3000;
-serve({ fetch: app.fetch, port });
+
+serve({
+  fetch: app.fetch,
+  port,
+});
+
 console.log(`Server running on port ${port}`);
