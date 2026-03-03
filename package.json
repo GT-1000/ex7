@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "render:load": "npm run layer:grunnskoler:download && npm run layer:fylker2023:download && cd server && npm run load",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
     "layer:grunnskoler:download": "download --extract --out tmp https://nedlasting.geonorge.no/geonorge/Befolkning/Grunnskoler/PostGIS/Befolkning_0000_Norge_25833_Grunnskoler_PostGIS.zip",
